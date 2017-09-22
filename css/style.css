@@ -1,0 +1,141 @@
+body{
+	font:16px sans-serif;
+	margin:0;
+	font-size-adjust: 0.5;
+	background: #fafafa;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+p{
+	font-weight: 100;
+	margin:0;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+header{
+	color: #c7c7c7;
+    font-size: 0.9rem;
+    margin: 2rem auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+header em{
+	font-style: normal;
+}
+header strong{
+	color:#222;
+	font-weight: 300;
+}
+button{
+	border:0;
+	background: #3897f0;
+	border-radius: 3px;
+	color:#fff;
+	font-size: 1rem;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+button:hover{
+	filter: brightness(0.9);
+}
+input,button{
+	display: block;
+	width: 100%;
+	line-height: 35px;
+	margin-bottom:10px;
+}
+input{
+	border:solid 1px rgba(0,0,0,0.2);
+	border-radius: 3px;
+	font-size: 1rem;
+	padding-left: 10px;
+	background: #fafafa;
+}
+aside{
+	text-align: center;
+	position: relative;
+}
+aside>p{
+	margin:20px 0;
+}
+aside>small{
+	display: inline-block;
+	margin-top:10px;
+}
+aside>a,small>a{
+	color: #385185;
+}
+article h4 a{
+	color: #3897f1;
+}
+aside>p::before{
+	content:'';
+	position: absolute;
+	top:9px;
+	left:0;
+	width: 100%;
+	border-bottom: 1px solid #999;
+
+
+}
+p>b{
+	position: relative;
+	display: inline-block;
+	background: #fff;
+	padding:0 10px;
+	z-index: 2;
+	color:#999;
+}
+
+.form,footer,article{
+	width: 370px;
+	margin:10px auto 0;
+	padding:20px;
+	border:solid 1px rgba(0,0,0,0.2);
+	background: #fff;
+}
+footer{
+	background: none;
+	text-align: center;
+	border:none;
+	margin-top:0;
+}
+footer a{
+	display: inline-block;
+	width: calc(300px / 2);
+}
+footer a>img{
+	display: block;
+	width: 100%;
+}
+footer em{
+	font-style: normal;
+	display: block;
+	margin:0 0 20px 0;
+}
+.form .title-svg{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.title-svg>img{
+	display: inline-block;
+	width: 60%;
+}
+/*responsove*/
+@media screen and (min-width:320px) and (max-width: 640px){
+	.form,footer,article{
+	width: auto;
+	margin:1%;
+	
+	}
+
+}
